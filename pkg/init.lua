@@ -26,6 +26,19 @@ caoying:addSkills {
 }
 caoying:addRelatedSkills { "ex__jianxiong", "xingshang" }
 
+General:new(extension, "huilu__m_shi__huanjie", "wei", 4):addSkills {
+  "huilu__gongmou",
+  "zhengshuo",
+}
+
+local godjiangwei = General:new(extension, "huilu__mobile__godjiangwei", "god", 3, 3)
+godjiangwei:addSkills {
+  "huilu__xinghun",
+  "huilu__tiantao",
+  "huilu__shenpeij",
+}
+godjiangwei:addRelatedSkill("huitian")
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -55,6 +68,22 @@ Fk:loadTranslationTable{
   ["$ex__jianxiong_huilu__ol__caoying"] = "且收此弩箭，不日奉还。",
   ["$xingshang_huilu__ol__caoying"] = "此刀枪军械，尽归我有。",
   ["~huilu__ol__caoying"] = "曹魏天下存，魂归故土安……",
+
+  ["huilu__m_shi__huanjie"] = "回势桓阶",
+  ["#huilu__m_shi__huanjie"] = "才周托命",
+  ["illustrator:huilu__m_shi__huanjie"] = "凝聚永恒",
+
+  ["$qice_huilu__m_shi__huanjie1"] = "无有奇策，何以解之？",
+  ["$qice_huilu__m_shi__huanjie2"] = "为今之计，唯效图纬故事。",
+  ["!huilu__m_shi__huanjie"] = "殿下身承天命，无所与让也。",
+  ["~huilu__m_shi__huanjie"] = "陛下厚遇，臣唯结草相报。",
+
+  ["huilu__mobile__godjiangwei"] = "回手杀神姜维",
+  ["#huilu__mobile__godjiangwei"] = "万民承霖",
+  ["illustrator:huilu__mobile__godjiangwei"] = "云涯",
+
+  ["~huilu__mobile__godjiangwei"] = "身陨何妨作新斗？与日同天卫九州。",
+  ["!huilu__mobile__godjiangwei"] = "心炎生熙暖尘世，天水化霖泽人间。",
 }
 
 return extension
