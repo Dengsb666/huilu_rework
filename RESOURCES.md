@@ -18,9 +18,9 @@
 - 原武将：界鲁肃。
 - 画师署名：游漫美绘。
 - 本包未修改图片内容，仅按新武将 ID 重命名。
-- `image/generals/huilu__ol__liupi.jpg` 复用 `tenyear` 包的刘辟立绘，画师署名君桓文化。
-- `image/generals/huilu__mobile__yangyi.jpg` 复用 `ol` 包的杨仪立绘，画师署名游漫美绘。
-- `image/generals/huilu__ol__caoying.jpg` 复用 `mobile` 包的曹婴立绘，画师署名 DH。
+- `image/generals/huilu__ol__liupi.jpg` 复用 FreeKill `ol` 包的 OL 刘辟原画（`image/generals/ol__liupi.jpg`）。
+- `image/generals/huilu__mobile__yangyi.jpg` 复用 FreeKill `mobile` 包的手杀杨仪原画（`image/generals/mobile__yangyi.jpg`）。
+- `image/generals/huilu__ol__caoying.jpg` 取自三国杀移动版官网曹婴页面的第 3 张官方立绘（蓝色冰雪背景、白色毛领），原图为 `https://www.sanguosha.cn/storage/uploads/images/skins/46102.jpg`，来源页为 `https://www.sanguosha.cn/pc/hero-detail-288.html`，下载日期为 2026-08-08；本包仅按 FreeKill 武将立绘比例裁切并缩放，官网页面未标注画师。
 
 ## 语音
 
