@@ -12,6 +12,8 @@
 - `pkg/skills/huilu__lingren.lua` 与 `pkg/skills/huilu__fujian.lua` 派生自 FreeKill `ol` 包的曹婴技能。凌人删除猜对两项后令当前牌不计次数的代码，其余收益保持原版。
 - `pkg/skills/huilu__gongmou.lua` 派生自 FreeKill `mobile` 包的 `pkg/mobile_bingshi/skills/gongmou.lua`；仅增加目标手牌数不大于技能拥有者的限制。
 - `pkg/skills/huilu__xinghun.lua`、`huilu__tiantao.lua`、`huilu__shenpeij.lua` 派生自 FreeKill `mobile` 包的神姜维技能。星魂限制为至多使用一张展示的【杀】并在结算后允许目标仅重排牌堆顶五张；天涛改为非锁定技且只弃置手牌；神霈的雷电伤害固定为1点。关联技能〖回天〗复用原版且未修改。
+- `pkg/skills/huilu__fuyue.lua` 与 `huilu__wenlan.lua` 派生自 FreeKill `tenyear` 包 2026-08-12 时点的乐曹植实现；保留“赋”的双牌名、初始标记和不计手牌上限机制，文澜改为每使用两张“赋”后标记两张手牌或重置任意张“赋”的额外牌名，每回合每项限一次。
+- `pkg/skills/huilu__luoying.lua` 派生自 FreeKill `yj` 包的原版落英实现，基线 commit `00995865cbc3bdc2ad9b6165ba7ee3f88cfcfd02`；触发范围改为技能拥有者的回合外所有因弃置进入弃牌堆的梅花牌，并增加至多等量标记“赋”的可选效果，不包含判定牌。
 - 上述源包以 GPL-3.0-or-later 发布。
 
 ## 立绘
@@ -24,6 +26,7 @@
 - `image/generals/huilu__mobile__yangyi.jpg` 复用 FreeKill `mobile` 包的手杀杨仪原画（`image/generals/mobile__yangyi.jpg`）。
 - `image/generals/huilu__ol__caoying.jpg` 取自三国杀移动版官网曹婴页面的第 3 张官方立绘（蓝色冰雪背景、白色毛领），原图为 `https://www.sanguosha.cn/storage/uploads/images/skins/46102.jpg`，来源页为 `https://www.sanguosha.cn/pc/hero-detail-288.html`，下载日期为 2026-08-08；本包仅按 FreeKill 武将立绘比例裁切并缩放，官网页面未标注画师。
 - `image/generals/huilu__m_shi__huanjie.jpg` 与 `image/generals/huilu__mobile__godjiangwei.jpg` 分别原样复用 FreeKill `mobile` 包的势桓阶、手杀神姜维原画。
+- `image/generals/huilu__mu__caozhi.jpg` 原样复用 FreeKill `tenyear` 包的乐曹植原画。
 
 ## 语音
 
@@ -34,6 +37,7 @@
 - 回手杀杨仪的度断、共损与阵亡语音复用 `mobile` 包对应资源。
 - 回OL曹婴的凌人、伏间、奸雄、行殇与阵亡语音复用 `ol` 包对应资源。
 - 回势桓阶和回手杀神姜维复用 `mobile` 包对应技能、阵亡及胜利语音；源包未提供势桓阶的独立阵亡语音文件。
+- 回乐曹植的赋乐、文澜和阵亡语音复用 `tenyear` 包对应资源；落英语音复用 `yj` 包原版曹植的落英语音。
 - 音频内容未修改，仅按新武将与技能 ID 重命名。
 
 > 立绘和音频的署名及再分发条件以各源包和原素材权利人的声明为准；若用于公开发布，请再次核验素材授权。

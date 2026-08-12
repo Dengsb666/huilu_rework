@@ -39,6 +39,12 @@ godjiangwei:addSkills {
 }
 godjiangwei:addRelatedSkill("huitian")
 
+General:new(extension, "huilu__mu__caozhi", "wei", 3):addSkills {
+  "huilu__fuyue",
+  "huilu__luoying",
+  "huilu__wenlan",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -84,6 +90,10 @@ Fk:loadTranslationTable{
 
   ["~huilu__mobile__godjiangwei"] = "身陨何妨作新斗？与日同天卫九州。",
   ["!huilu__mobile__godjiangwei"] = "心炎生熙暖尘世，天水化霖泽人间。",
+
+  ["huilu__mu__caozhi"] = "回乐曹植",
+  ["#huilu__mu__caozhi"] = "漱律重章",
+  ["~huilu__mu__caozhi"] = "志较天高，命犹纸薄。",
 }
 
 return extension
