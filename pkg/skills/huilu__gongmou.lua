@@ -86,6 +86,19 @@ gongmou:addTest(function(room, me)
   lu.assertTrue(canChoosePartner(threeCards, otherThreeCards))
   lu.assertFalse(canChoosePartner(twoCards, threeCards))
   lu.assertFalse(canChoosePartner(twoCards, twoCards))
+
+  local noEligibleRoom = {
+    getOtherPlayers = function()
+      return { threeCards }
+    end,
+  }
+  local hasEligibleRoom = {
+    getOtherPlayers = function()
+      return { twoCards, otherThreeCards }
+    end,
+  }
+  lu.assertEquals(#getEligiblePartners(noEligibleRoom, twoCards), 0)
+  lu.assertEquals(#getEligiblePartners(hasEligibleRoom, threeCards), 2)
 end)
 
 return gongmou
