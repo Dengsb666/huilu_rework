@@ -7,7 +7,7 @@ local gongmou = fk.CreateSkill{
 
 Fk:loadTranslationTable{
   ["huilu__gongmou"] = "共谋",
-  [":huilu__gongmou"] = "准备阶段，你可以与一名手牌数不大于你的其他角色交换手牌。若如此做，你获得〖奇策〗、其获得〖看破〗直到回合结束。",
+  [":huilu__gongmou"] = "准备阶段，你可以与一名手牌数不大于你的其他角色交换手牌。若如此做，你获得〖奇策〗、其获得〖看破〗直到回合结束。若没有符合条件的角色，你本回合获得〖奇策〗。",
 
   ["#huilu__gongmou-choose"] = "共谋：与一名手牌数不大于你的角色交换手牌；你获得“奇策”，其获得“看破”直到回合结束",
 
@@ -28,15 +28,19 @@ end
 gongmou:addEffect(fk.EventPhaseStart, {
   anim_type = "control",
   can_trigger = function(self, event, target, player, data)
-    return target == player and player:hasSkill(gongmou.name) and player.phase == Player.Start and
-      #getEligiblePartners(player.room, player) > 0
+    return target == player and player:hasSkill(gongmou.name) and player.phase == Player.Start
   end,
   on_cost = function(self, event, target, player, data)
     local room = player.room
+    local eligiblePartners = getEligiblePartners(room, player)
+    if #eligiblePartners == 0 then
+      event:setCostData(self, { tos = {} })
+      return true
+    end
     local to = room:askToChoosePlayers(player, {
       min_num = 1,
       max_num = 1,
-      targets = getEligiblePartners(room, player),
+      targets = eligiblePartners,
       skill_name = gongmou.name,
       prompt = "#huilu__gongmou-choose",
       cancelable = true,
@@ -49,8 +53,10 @@ gongmou:addEffect(fk.EventPhaseStart, {
   on_use = function(self, event, target, player, data)
     local room = player.room
     local to = event:getCostData(self).tos[1]
-    if not (player:isKongcheng() and to:isKongcheng()) then
-      room:swapAllCards(player, { player, to }, gongmou.name)
+    if to then
+      if not (player:isKongcheng() and to:isKongcheng()) then
+        room:swapAllCards(player, { player, to }, gongmou.name)
+      end
     end
     if not player.dead and not player:hasSkill("qice", true) then
       room:handleAddLoseSkills(player, "qice")
@@ -58,7 +64,7 @@ gongmou:addEffect(fk.EventPhaseStart, {
         room:handleAddLoseSkills(player, "-qice")
       end)
     end
-    if not to.dead and not to:hasSkill("kanpo", true) then
+    if to and not to.dead and not to:hasSkill("kanpo", true) then
       room:handleAddLoseSkills(to, "kanpo")
       room.logic:getCurrentEvent():findParent(GameEvent.Turn):addCleaner(function()
         room:handleAddLoseSkills(to, "-kanpo")
