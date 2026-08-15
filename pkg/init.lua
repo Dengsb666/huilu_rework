@@ -51,6 +51,13 @@ General:new(extension, "huilu__wm__zhugeliang", "shu", 3, 7):addSkills {
   "huilu__qingshi",
 }
 
+local mousunshangxiang = General:new(extension, "huilu__mou__sunshangxiang", "shu", 4, 4, General.Female)
+mousunshangxiang:addSkills {
+  "huilu__mou__jieyin",
+  "huilu__mou__liangzhu",
+  "huilu__mou__xiaoji",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -107,6 +114,12 @@ Fk:loadTranslationTable{
   ["cv:huilu__wm__zhugeliang"] = "马洋",
 
   ["~huilu__wm__zhugeliang"] = "天下事，了犹未了，终以不了了之……",
+
+  ["huilu__mou__sunshangxiang"] = "回谋孙尚香",
+  ["#huilu__mou__sunshangxiang"] = "骄豪明俏",
+  ["illustrator:huilu__mou__sunshangxiang"] = "暗金",
+
+  ["~huilu__mou__sunshangxiang"] = "此去一别，竟无再见之日……",
 }
 
 return extension

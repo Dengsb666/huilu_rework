@@ -15,6 +15,7 @@
 - `pkg/skills/huilu__fuyue.lua` 与 `huilu__wenlan.lua` 派生自 FreeKill `tenyear` 包 2026-08-12 时点的乐曹植实现；保留“赋”的双牌名、初始标记和不计手牌上限机制，文澜改为每使用两张“赋”后标记两张手牌或重置任意张“赋”的额外牌名，每回合每项限一次。
 - `pkg/skills/huilu__luoying.lua` 派生自 FreeKill `yj` 包的原版落英实现，基线 commit `00995865cbc3bdc2ad9b6165ba7ee3f88cfcfd02`；触发范围改为技能拥有者的回合外所有因弃置进入弃牌堆的梅花牌，并增加至多等量标记“赋”的可选效果，不包含判定牌。
 - `pkg/skills/huilu__guanxing.lua`、`huilu__zhizhe.lua` 与 `huilu__qingshi.lua` 参考 FreeKill `standard` 包的〖观星〗以及 `tenyear` 包武诸葛亮的〖尽瘁〗、〖智哲〗和〖情势〗实现；基线 commit 分别为 `37f8c1248d491f5fbc7a07f1bc53724191e44497` 与 `397a15ada7ecb317b550a8cf520b20dc0a602a8d`。本包按回武诸葛亮的新规则重新实现观星数量、智哲的花色映射与弃牌回收，以及情势触发观星。
+- `pkg/skills/huilu__mou__jieyin.lua` 与 `huilu__mou__xiaoji.lua` 派生自 FreeKill `mougong` 包改版前的谋孙尚香实现，基线 commit `fbc1c4569c3e2cfdf237c3cf39b6ddd761bc7d0b`；保留旧版使命失败流程，删除已不再使用的“妆”牌流程，并为技能和标记加独立前缀。`huilu__mou__liangzhu.lua` 按本包的新规则重新实现回复体力后的摸牌、获得场上装备和交牌流程。
 - 上述源包以 GPL-3.0-or-later 发布。
 
 ## 立绘
@@ -29,6 +30,7 @@
 - `image/generals/huilu__m_shi__huanjie.jpg` 与 `image/generals/huilu__mobile__godjiangwei.jpg` 分别原样复用 FreeKill `mobile` 包的势桓阶、手杀神姜维原画。
 - `image/generals/huilu__mu__caozhi.jpg` 原样复用 FreeKill `tenyear` 包的乐曹植原画。
 - `image/generals/huilu__wm__zhugeliang.jpg` 原样复用 FreeKill `tenyear` 包的武诸葛亮原画（画师：梦回唐朝）。
+- `image/generals/huilu__mou__sunshangxiang.jpg` 原样复用 FreeKill `mougong` 包的谋孙尚香原画（画师：暗金）。
 
 ## 语音
 
@@ -41,6 +43,7 @@
 - 回势桓阶和回手杀神姜维复用 `mobile` 包对应技能、阵亡及胜利语音；源包未提供势桓阶的独立阵亡语音文件。
 - 回乐曹植的赋乐、文澜和阵亡语音复用 `tenyear` 包对应资源；落英语音复用 `yj` 包原版曹植的落英语音。
 - 回武诸葛亮的观星、智哲、情势和阵亡语音复用 `tenyear` 包武诸葛亮的尽瘁、智哲、情势及阵亡资源；尽瘁语音按新技能 ID 重命名为观星语音。
+- 回谋孙尚香的结姻、良助、枭姬及阵亡语音原样复用 FreeKill `mougong` 包对应资源。
 - 音频内容未修改，仅按新武将与技能 ID 重命名。
 
 > 立绘和音频的署名及再分发条件以各源包和原素材权利人的声明为准；若用于公开发布，请再次核验素材授权。
