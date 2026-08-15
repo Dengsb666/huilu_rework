@@ -45,6 +45,12 @@ General:new(extension, "huilu__mu__caozhi", "wei", 3):addSkills {
   "huilu__wenlan",
 }
 
+General:new(extension, "huilu__wm__zhugeliang", "shu", 3, 7):addSkills {
+  "huilu__guanxing",
+  "huilu__zhizhe",
+  "huilu__qingshi",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -94,6 +100,13 @@ Fk:loadTranslationTable{
   ["huilu__mu__caozhi"] = "回乐曹植",
   ["#huilu__mu__caozhi"] = "漱律重章",
   ["~huilu__mu__caozhi"] = "志较天高，命犹纸薄。",
+
+  ["huilu__wm__zhugeliang"] = "回武诸葛亮",
+  ["#huilu__wm__zhugeliang"] = "忠武良弼",
+  ["illustrator:huilu__wm__zhugeliang"] = "梦回唐朝",
+  ["cv:huilu__wm__zhugeliang"] = "马洋",
+
+  ["~huilu__wm__zhugeliang"] = "天下事，了犹未了，终以不了了之……",
 }
 
 return extension
