@@ -58,6 +58,11 @@ mousunshangxiang:addSkills {
   "huilu__mou__xiaoji",
 }
 
+General:new(extension, "huilu__ol__yadan", "qun", 4):addSkills {
+  "huilu__qingya",
+  "huilu__tielun",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -120,6 +125,13 @@ Fk:loadTranslationTable{
   ["illustrator:huilu__mou__sunshangxiang"] = "暗金",
 
   ["~huilu__mou__sunshangxiang"] = "此去一别，竟无再见之日……",
+
+  ["huilu__ol__yadan"] = "回OL雅丹",
+  ["#huilu__ol__yadan"] = "西羌相",
+  ["illustrator:huilu__ol__yadan"] = "匠人绘",
+  ["designer:huilu__ol__yadan"] = "cyc",
+
+  ["~huilu__ol__yadan"] = "多谢丞相不杀之恩……",
 }
 
 return extension
