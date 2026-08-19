@@ -63,6 +63,11 @@ General:new(extension, "huilu__ol__yadan", "qun", 4):addSkills {
   "huilu__tielun",
 }
 
+General:new(extension, "huilu__ol__mamidi", "qun", 4, 6):addSkills {
+  "huilu__bingjie",
+  "huilu__zhengding",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -132,6 +137,12 @@ Fk:loadTranslationTable{
   ["designer:huilu__ol__yadan"] = "cyc",
 
   ["~huilu__ol__yadan"] = "多谢丞相不杀之恩……",
+
+  ["huilu__ol__mamidi"] = "回OL马日磾",
+  ["#huilu__ol__mamidi"] = "南冠楚囚",
+  ["illustrator:huilu__ol__mamidi"] = "猎枭",
+
+  ["~huilu__ol__mamidi"] = "灭纪废典，其能久乎！",
 }
 
 return extension
