@@ -78,6 +78,11 @@ General:new(extension, "huilu__mobile__baoxin", "qun", 4):addSkills {
   "huilu__yimou",
 }
 
+General:new(extension, "huilu__mobile__ganfuren", "shu", 3, 3, General.Female):addSkills {
+  "huilu__zhijie",
+  "huilu__shushen",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -165,6 +170,12 @@ Fk:loadTranslationTable{
   ["designer:huilu__mobile__baoxin"] = "jcj熊",
 
   ["~huilu__mobile__baoxin"] = "良谋有壮骨，奈何不逢时啊！",
+
+  ["huilu__mobile__ganfuren"] = "回手杀甘夫人",
+  ["#huilu__mobile__ganfuren"] = "昭烈皇后",
+  ["illustrator:huilu__mobile__ganfuren"] = "错落宇宙",
+
+  ["~huilu__mobile__ganfuren"] = "只愿夫君，大事可成，兴汉有期……",
 }
 
 return extension
