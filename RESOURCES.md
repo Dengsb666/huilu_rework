@@ -19,6 +19,7 @@
 - `pkg/skills/huilu__qingya.lua` 与 `huilu__tielun.lua` 派生自 FreeKill `ol` 包的雅丹技能，基线 commit `e3090054066c8cdb5c53d3b4fb053aa707832ef1`；倾轧取消较短路径对方向选项的限制，铁轮增加全员距离为1时的本轮手牌上限奖励。
 - `pkg/skills/huilu__bingjie.lua` 与 `huilu__zhengding.lua` 派生自 FreeKill `ol` 包的马日磾技能，基线 commit `e3090054066c8cdb5c53d3b4fb053aa707832ef1`；秉节保持原版，正订在原有增加体力上限后追加摸两张牌。
 - `pkg/skills/huilu__nigu.lua` 与 `huilu__lulian.lua` 派生自 FreeKill `mobile` 包的势孙綝技能，基线 commit `23acd9fc2df5986d7bab0594b74ab5202a10abba` 所对应工作区的 `mobile_bingshi` 实现；逆固删除未交牌后的本回合增伤标记与触发，戮连的乘势改为可选且目标改为全场体力值最大者。
+- `pkg/skills/huilu__mutao.lua` 与 `huilu__yimou.lua` 派生自 FreeKill `mobile` 包的手杀鲍信技能，基线 commit `f3cd83af005fa2219069a47c19baca95f1ee114b`；募讨仅将对最后一名角色造成的伤害由其手牌中【杀】的数量（至多2点）改为固定1点，毅谋保持原版。
 - 上述源包以 GPL-3.0-or-later 发布。
 
 ## 立绘
@@ -37,6 +38,7 @@
 - `image/generals/huilu__ol__yadan.jpg` 原样复用 FreeKill `ol` 包的雅丹原画（画师：匠人绘）。
 - `image/generals/huilu__ol__mamidi.jpg` 原样复用 FreeKill `ol` 包的 OL 马日磾原画（画师：猎枭）。
 - `image/generals/huilu__m_shi__sunchen.jpg` 原样复用 FreeKill `mobile` 包的势孙綝原画。
+- `image/generals/huilu__mobile__baoxin.jpg` 原样复用 FreeKill `mobile` 包的手杀鲍信原画（画师：梦想君）。
 
 ## 语音
 
@@ -53,6 +55,7 @@
 - 回OL雅丹的倾轧及阵亡语音原样复用 FreeKill `ol` 包对应资源；原包未提供铁轮语音。
 - 回OL马日磾的秉节、正订及阵亡语音原样复用 FreeKill `ol` 包对应资源。
 - 回势孙綝的逆固、戮连及阵亡语音原样复用 FreeKill `mobile` 包对应资源。
+- 回手杀鲍信的募讨、毅谋及阵亡语音原样复用 FreeKill `mobile` 包对应资源。
 - 音频内容未修改，仅按新武将与技能 ID 重命名。
 
 > 立绘和音频的署名及再分发条件以各源包和原素材权利人的声明为准；若用于公开发布，请再次核验素材授权。

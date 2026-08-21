@@ -73,6 +73,11 @@ General:new(extension, "huilu__m_shi__sunchen", "wu", 4):addSkills {
   "huilu__lulian",
 }
 
+General:new(extension, "huilu__mobile__baoxin", "qun", 4):addSkills {
+  "huilu__mutao",
+  "huilu__yimou",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -153,6 +158,13 @@ Fk:loadTranslationTable{
   ["#huilu__m_shi__sunchen"] = "蝮影权倾",
 
   ["~huilu__m_shi__sunchen"] = "臣无功劳亦有苦劳，望陛下饶命、饶命啊！",
+
+  ["huilu__mobile__baoxin"] = "回手杀鲍信",
+  ["#huilu__mobile__baoxin"] = "坚朴的忠相",
+  ["illustrator:huilu__mobile__baoxin"] = "梦想君",
+  ["designer:huilu__mobile__baoxin"] = "jcj熊",
+
+  ["~huilu__mobile__baoxin"] = "良谋有壮骨，奈何不逢时啊！",
 }
 
 return extension
