@@ -21,6 +21,7 @@
 - `pkg/skills/huilu__nigu.lua` 与 `huilu__lulian.lua` 派生自 FreeKill `mobile` 包的势孙綝技能，基线 commit `23acd9fc2df5986d7bab0594b74ab5202a10abba` 所对应工作区的 `mobile_bingshi` 实现；逆固删除未交牌后的本回合增伤标记与触发，戮连的乘势改为可选且目标改为全场体力值最大者。
 - `pkg/skills/huilu__mutao.lua` 与 `huilu__yimou.lua` 派生自 FreeKill `mobile` 包的手杀鲍信技能，基线 commit `f3cd83af005fa2219069a47c19baca95f1ee114b`；募讨仅将对最后一名角色造成的伤害由其手牌中【杀】的数量（至多2点）改为固定1点，毅谋保持原版。
 - `pkg/skills/huilu__zhijie.lua` 与 `huilu__shushen.lua` 派生自 FreeKill `mobile` 包的手杀甘夫人技能，基线 commit `f3cd83af005fa2219069a47c19baca95f1ee114b`；智诫保持原版，淑慎将两个分支原本分别计算的“每回合各限一次”改为共用一次发动次数。
+- `pkg/skills/huilu__yanru.lua` 与 `huilu__hezhong.lua` 派生自 FreeKill `ol` 包的 OL 费祎技能，基线 commit `e3090054066c8cdb5c53d3b4fb053aa707832ef1`；晏如删除奇数手牌分支，仅保留偶数分支，和衷将“大于”和“小于”两个分支改为共用每回合一次的发动次数。
 - 上述源包以 GPL-3.0-or-later 发布。
 
 ## 立绘
@@ -41,6 +42,7 @@
 - `image/generals/huilu__m_shi__sunchen.jpg` 原样复用 FreeKill `mobile` 包的势孙綝原画。
 - `image/generals/huilu__mobile__baoxin.jpg` 原样复用 FreeKill `mobile` 包的手杀鲍信原画（画师：梦想君）。
 - `image/generals/huilu__mobile__ganfuren.jpg` 原样复用 FreeKill `mobile` 包的手杀甘夫人原画（画师：错落宇宙）。
+- `image/generals/huilu__ol__feiyi.jpg` 原样复用 FreeKill `ol` 包的 OL 费祎原画（画师：君桓文化）。
 
 ## 语音
 
@@ -59,6 +61,7 @@
 - 回势孙綝的逆固、戮连及阵亡语音原样复用 FreeKill `mobile` 包对应资源。
 - 回手杀鲍信的募讨、毅谋及阵亡语音原样复用 FreeKill `mobile` 包对应资源。
 - 回手杀甘夫人的智诫、淑慎及阵亡语音原样复用 FreeKill `mobile` 包对应资源。
+- 回OL费祎的晏如、和衷及阵亡语音原样复用 FreeKill `ol` 包对应资源。
 - 音频内容未修改，仅按新武将与技能 ID 重命名。
 
 > 立绘和音频的署名及再分发条件以各源包和原素材权利人的声明为准；若用于公开发布，请再次核验素材授权。

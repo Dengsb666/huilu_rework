@@ -83,6 +83,11 @@ General:new(extension, "huilu__mobile__ganfuren", "shu", 3, 3, General.Female):a
   "huilu__shushen",
 }
 
+General:new(extension, "huilu__ol__feiyi", "shu", 3):addSkills {
+  "huilu__yanru",
+  "huilu__hezhong",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -176,6 +181,13 @@ Fk:loadTranslationTable{
   ["illustrator:huilu__mobile__ganfuren"] = "错落宇宙",
 
   ["~huilu__mobile__ganfuren"] = "只愿夫君，大事可成，兴汉有期……",
+
+  ["huilu__ol__feiyi"] = "回OL费祎",
+  ["#huilu__ol__feiyi"] = "中才之相",
+  ["designer:huilu__ol__feiyi"] = "廷玉",
+  ["illustrator:huilu__ol__feiyi"] = "君桓文化",
+
+  ["~huilu__ol__feiyi"] = "今为小人所伤，皆酒醉之误……",
 }
 
 return extension
