@@ -88,6 +88,11 @@ General:new(extension, "huilu__ol__feiyi", "shu", 3):addSkills {
   "huilu__hezhong",
 }
 
+General:new(extension, "intl__simafu", "wei", 3):addSkills {
+  "intl__xunde",
+  "intl__chenjie",
+}
+
 Fk:loadTranslationTable{
   ["huilu__lusu"] = "回鲁肃",
   ["#huilu__lusu"] = "独断的外交家",
@@ -188,6 +193,12 @@ Fk:loadTranslationTable{
   ["illustrator:huilu__ol__feiyi"] = "君桓文化",
 
   ["~huilu__ol__feiyi"] = "今为小人所伤，皆酒醉之误……",
+
+  ["intl__simafu"] = "国际司马孚",
+  ["#intl__simafu"] = "阐忠弘道",
+  ["illustrator:intl__simafu"] = "鬼画府",
+
+  ["~intl__simafu"] = "身辅六公，亦难报此恩……",
 }
 
 return extension
