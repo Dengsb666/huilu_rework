@@ -78,6 +78,15 @@ General:new(extension, "huilu__mobile__baoxin", "qun", 4):addSkills {
   "huilu__yimou",
 }
 
+General:new(extension, "huilu__ol_ex__zhuran", "wu", 4):addSkills {
+  "huilu__ol_ex__danshou",
+}
+
+General:new(extension, "huilu__olmou__tianfeng", "qun", 3):addSkills {
+  "huilu__olmou__zhijiant",
+  "huilu__olmou__xiaojie",
+}
+
 General:new(extension, "huilu__mobile__ganfuren", "shu", 3, 3, General.Female):addSkills {
   "huilu__zhijie",
   "huilu__shushen",
@@ -180,6 +189,12 @@ Fk:loadTranslationTable{
   ["designer:huilu__mobile__baoxin"] = "jcj熊",
 
   ["~huilu__mobile__baoxin"] = "良谋有壮骨，奈何不逢时啊！",
+
+  ["huilu__ol_ex__zhuran"] = "回OL界朱然",
+  ["#huilu__ol_ex__zhuran"] = "不动之督",
+  ["~huilu__ol_ex__zhuran"] = "大耳贼就在眼前，快追……",
+
+  ["huilu__olmou__tianfeng"] = "回谋田丰",
 
   ["huilu__mobile__ganfuren"] = "回手杀甘夫人",
   ["#huilu__mobile__ganfuren"] = "昭烈皇后",

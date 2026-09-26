@@ -2,6 +2,9 @@
 
 ## 代码
 
+- `pkg/skills/huilu__ol_ex__danshou.lua` 派生自最新 OL 包 `ol_ex__danshou`，基线为 Gitee 仓库 `https://gitee.com/Qsgs-Fans/ol` 的 commit `6066b420c3e8c6d2ed02d5d40579d06e64c47731`；仅将技能、分支选项和提示 ID 加上 `huilu__` 前缀，规则逻辑保持一致。
+- `pkg/skills/huilu__olmou__zhijiant.lua` 使用 OL 仓库谋田丰早期提交 `04e7bb9a93f0907c70faa9a28a65d4073fe6c1c1` 中的〖执谏〗规则，并将技能 ID、标记和提示 ID 加上 `huilu__` 前缀；`pkg/skills/huilu__olmou__xiaojie.lua` 派生自 OL 当前谋田丰的〖效竭〗，仅做同样的 ID 隔离。
+
 - `pkg/skills/huilu__haoshi.lua` 派生自 FreeKill `shzl` 包的 `pkg/forest/skills/haoshi.lua`。
 - `pkg/skills/huilu__dimeng.lua` 派生自 FreeKill `shzl` 包的 `pkg/forest/skills/dimeng.lua`。
 - 基线：`shzl` commit `7f9daae027e5429378c904b940fcb457f84b9e4a`。
@@ -26,6 +29,9 @@
 - 上述源包以 GPL-3.0-or-later 发布。
 
 ## 立绘
+
+- `image/generals/huilu__ol_ex__zhuran.jpg` 原样复用最新 OL 包的 `image/generals/ol_ex__zhuran.jpg`，来源为上述 OL 仓库 commit `6066b420c3e8c6d2ed02d5d40579d06e64c47731`。
+- `image/generals/huilu__olmou__tianfeng.jpg` 原样复用最新 OL 包的 `image/generals/olmou__tianfeng.jpg`。OL 包未提供谋田丰专属语音或阵亡语音，因此本次未新增语音文件。
 
 - `image/generals/huilu__lusu.jpg` 复用 FreeKill `ol` 包中的 `image/generals/ol_ex__lusu.jpg`。
 - 原武将：界鲁肃。
